@@ -1,6 +1,7 @@
 # The URL the site will be built for
 base_url = "https://hhya7iyw.github.io/"
-theme = "anemone"
+
+theme = "after-dark"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -8,6 +9,12 @@ compile_sass = true
 build_search_index = true
 
 paginate_by = 5
+
+taxonomies = [
+    # You can enable/disable RSS
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
 
 [markdown]
 # Whether to do syntax highlighting
