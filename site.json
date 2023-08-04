@@ -1,12 +1,14 @@
 {
-    "title": "",
-    "subtitle": "",
+    "title": "test",
+    "subtitle": "tttarstarst",
     "owner": {
         "name": "Front end dev",
         "email": ""
     },
     "social": {
-        "github": ""
+        "github": "",
+        "medium": "",
+        "twitter": ""
     },
     "newsletter": {
         "currentCount": "",
@@ -21,5 +23,6 @@
             "developer blog",
             "engineering blog"
         ]
-    }
+    },
+    "cname": "hhya7iyw.github.io"
 }
