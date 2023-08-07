@@ -1,13 +1,13 @@
 +++
 title = "Week1.1 It only goes down hill from here..."
-date = 2023-01-08
+date = 2023-08-01
 +++
 How to cope with the absurd and frustrating?
 
 Some people go insane, while others write it down to cope with the pain. I am writing this to describe the journey I am on right now, because usually people don't believe me when I tell them these stories.
 
 Last year, I joined a new company. I was excited because it is a global company, and I had the chance to work at the "heart of the company," where the guy who invented the system was still working on the project. Let's call him Tom. Tom is a genius. He is old and knows everything, but he never goes to the office.
-<!-- more -->
+
 On my first day, I met my two colleagues. Let's call them John and Jax. They were both younger and had been working on the project from the beginning, at least on the current iteration. The first version was written for mainframes. This is why everyone thought Tom was a genius, but I'm skipping ahead.
 
 I was sitting in the room with these two guys, waiting for my onboarding. John started talking. "We have some old PowerPoints, but they are mostly outdated, and we didn't have time to prepare anything."

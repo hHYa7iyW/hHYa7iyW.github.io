@@ -1,6 +1,6 @@
 +++
 title = "Week1.2 What I need to do to set up my machine?"
-date = 2023-03-08
+date = 2023-08-03
 +++
 
  ordered a MacBook, but it wasn't ready for me yet.
@@ -9,7 +9,6 @@ It was heavy, you could easily kill someone or yourself just by carrying it.
 I booted it up, and the first thing it did was to update Windows.
 In the meantime, my manager gave me my AD login and told me to request admin rights.
 After 30 minutes of Windows update and restarts, I finally saw the login screen.
-<!-- more -->
 
 I was able to log in, and it started updating Windows again. More waiting.
 After 20 minutes, I was finally able to start setting up my machine.
