@@ -2,6 +2,8 @@
 base_url = "https://hhya7iyw.github.io/"
 
 theme = "after-dark"
+generate_feed = true
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 

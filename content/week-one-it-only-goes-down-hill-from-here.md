@@ -1,6 +1,6 @@
 +++
-title = "Week1. It only goes down hill from here..."
-date = 2023-08-01
+title = "Week1.1 It only goes down hill from here..."
+date = 2023-01-08
 +++
 How to cope with the absurd and frustrating?
 
