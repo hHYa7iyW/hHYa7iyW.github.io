@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title></title>
+    <link href="https://hhya7iyw.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://hhya7iyw.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-08-03T00:00:00+00:00</updated>
+    <id>https://hhya7iyw.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Week1.2 What I need to do to set up my machine?</title>
+        <published>2023-08-03T00:00:00+00:00</published>
+        <updated>2023-08-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://hhya7iyw.github.io/week-one-two-what-a-setup/" type="text/html"/>
+        <id>https://hhya7iyw.github.io/week-one-two-what-a-setup/</id>
+        
+        <content type="html">&lt;p&gt;ordered a MacBook, but it wasn&#x27;t ready for me yet.
+Instead, I got this big, clunky Windows laptop.
+It was heavy, you could easily kill someone or yourself just by carrying it.
+I booted it up, and the first thing it did was to update Windows.
+In the meantime, my manager gave me my AD login and told me to request admin rights.
+After 30 minutes of Windows update and restarts, I finally saw the login screen.&lt;&#x2F;p&gt;
+&lt;p&gt;I was able to log in, and it started updating Windows again. More waiting.
+After 20 minutes, I was finally able to start setting up my machine.&lt;&#x2F;p&gt;
+&lt;p&gt;Node was the first thing I wanted to install. &amp;quot;Oh wait, I can&#x27;t,&amp;quot; I then remembered.
+I didn&#x27;t have the permissions for that.
+More waiting for IT support to set up my second AD account with admin rights.&lt;&#x2F;p&gt;
+&lt;p&gt;After lunch, I finally got the admin account and was able to install Node and Git.
+John then invited me to all the repos and groups in GitLab.
+I was quite happy that we were using GitLab as CI&#x2F;CD. At least, that&#x27;s what I thought we were doing.&lt;&#x2F;p&gt;
+&lt;p&gt;Now it was time for me to check out the code from GitLab. So I did the usual: created an SSH key and added it to GitLab.
+I cloned the repo and wanted to install the npm packages. Jax said, &amp;quot;No, you can&#x27;t just install with npm i.&amp;quot;
+He then explained to me that they have a monorepo, and I needed to use npm run full-install. He had written a script to
+install all the needed dependencies. I ran the command, and I got an error. Something about certificates.
+Jax then said, &amp;quot;Ah, yes, we have self-signed certificates. I&#x27;ll email you the needed file, and you need to add it so that npm can use it.&amp;quot;
+He sent me the file via email, and I needed to add this to my environment: &lt;code&gt;export NODE_EXTRA_CA_CERTS=&amp;lt;PATH TO FILE&amp;gt;&lt;&#x2F;code&gt;, and
+my .npmrc needed &lt;code&gt;strict-ssl=false&lt;&#x2F;code&gt;. After that, he said we have our own npm repo. It&#x27;s some old, outdated JFrog server.&lt;&#x2F;p&gt;
+&lt;p&gt;After all of this, I was finally able to run npm run full-install. It only took 22 minutes to finish.
+This was the longest npm install I&#x27;ve ever seen. While it was installing, I asked Jax:
+&amp;quot;Why do we need 32GB, and a desktop CPU to run our frontend?&amp;quot; We don&#x27;t run the backend on our machine; we&#x27;re connecting to one environment.
+Jax answered, &amp;quot;Because we have a monorepo and a complicated setup, and Webpack needs a lot of RAM. Also, you can&#x27;t run all the frontend processes at the same time.&amp;quot;
+I asked him, &amp;quot;What do you mean by &#x27;all the frontends&#x27;?&amp;quot; Jax replied, &amp;quot;Yes, see, we have a lot of apps, and they have a lot of features. I&#x27;ll show you once you can run the app.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Then I started the frontends, and the fans of the clunky laptop started spinning right away and wouldn&#x27;t stop until I stopped the process for serving our frontends.
+Yes, I wasn&#x27;t running all of them, only the ones I needed.&lt;&#x2F;p&gt;
+&lt;p&gt;After a build&#x2F;startup time of around 3 to 5 minutes, I could finally see the app running.
+I entered &lt;code&gt;localhost:3000&lt;&#x2F;code&gt;, and I could see nothing, but an error message that said something about the JSON not being parsed.
+John then said, &amp;quot;Oh, it looks like you have no access rights or role in the app.&amp;quot;
+I asked him how he knew that. He just said, &amp;quot;You just know after a while.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;He then started the app on his laptop and added me to the one test environment that all the frontend devs are using.
+Then he said, &amp;quot;If I forget to add you tomorrow, ping me please.&amp;quot;
+I looked confused at him. He continued, &amp;quot;Yeah, our test environment is synced every night.
+Someone has to add you to the AD, and then our system needs to import your user. This can sometimes take 2 weeks.&amp;quot;
+I just said, &amp;quot;Okay.&amp;quot; Since my brain now couldn&#x27;t process what he just said.&lt;&#x2F;p&gt;
+&lt;p&gt;Jax then said, &amp;quot;Okay, let&#x27;s call it a day. It&#x27;s time to go home. We have the system running. This was super fast. Only 2 days. Usually, this takes at least a week.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Again, my mind couldn&#x27;t process what he just said. Two weeks to start a frontend?&lt;&#x2F;p&gt;
+&lt;p&gt;I left the office again with mixed feelings. On the one hand, I was glad that I had finally gotten the system running. But, I was baffled by the amount of time and effort it had taken.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Week1.1 It only goes down hill from here...</title>
+        <published>2023-08-01T00:00:00+00:00</published>
+        <updated>2023-08-01T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://hhya7iyw.github.io/week-one-it-only-goes-down-hill-from-here/" type="text/html"/>
+        <id>https://hhya7iyw.github.io/week-one-it-only-goes-down-hill-from-here/</id>
+        
+        <content type="html">&lt;p&gt;How to cope with the absurd and frustrating?&lt;&#x2F;p&gt;
+&lt;p&gt;Some people go insane, while others write it down to cope with the pain. I am writing this to describe the journey I am on right now, because usually people don&#x27;t believe me when I tell them these stories.&lt;&#x2F;p&gt;
+&lt;p&gt;Last year, I joined a new company. I was excited because it is a global company, and I had the chance to work at the &amp;quot;heart of the company,&amp;quot; where the guy who invented the system was still working on the project. Let&#x27;s call him Tom. Tom is a genius. He is old and knows everything, but he never goes to the office.&lt;&#x2F;p&gt;
+&lt;p&gt;On my first day, I met my two colleagues. Let&#x27;s call them John and Jax. They were both younger and had been working on the project from the beginning, at least on the current iteration. The first version was written for mainframes. This is why everyone thought Tom was a genius, but I&#x27;m skipping ahead.&lt;&#x2F;p&gt;
+&lt;p&gt;I was sitting in the room with these two guys, waiting for my onboarding. John started talking. &amp;quot;We have some old PowerPoints, but they are mostly outdated, and we didn&#x27;t have time to prepare anything.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I replied, &amp;quot;Okay, can you explain to me what we are working on here?&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;John continued, &amp;quot;We are the most important project here at this company. All the data and everything to make this company run goes through our system.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I was thinking, &amp;quot;Wow, then we must have a lot of developers and teams, since we are global, and our production runs 24&#x2F;7.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;John continued, &amp;quot;You will join the platform team. We are building the most important parts here, but you will see that management will not give us enough time, so we have to work fast!&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I said, &amp;quot;Okay,&amp;quot; thinking that was a strange turn of events.&lt;&#x2F;p&gt;
+&lt;p&gt;Suddenly, Jax started talking. &amp;quot;We do a lot here because the other teams need three weeks to implement something easy. We only need three hours.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I didn&#x27;t know what to say to this, so I just said, &amp;quot;Aha.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Jax continued, &amp;quot;You will also hear from management that we are hard to work with, but that&#x27;s not true at all. We just tell people how it is.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;John jumped in and said, &amp;quot;What Jax means is that we sometimes seem hard, but we just want to create the best software, and we need someone who can also implement things from the ground up.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I said, &amp;quot;I&#x27;m okay with a rougher environment. So, no problem.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;They looked relieved and happy. I didn&#x27;t know what this meant at the time.&lt;&#x2F;p&gt;
+&lt;p&gt;So we continued talking about the software we were developing, or the platform we should build. Right when I joined, they were phasing out an old Java Applet client, and they were working on replacing it with a web app, which was in an MVP phase.&lt;&#x2F;p&gt;
+&lt;p&gt;I got excited. MVP sounded to me like some new tech, and we could learn from old mistakes and make it better. I later would find out how wrong I was.&lt;&#x2F;p&gt;
+&lt;p&gt;The software we should develop is a PDM&#x2F;PLM. Basically, everything that is new and builds a product and manages its lifecycle. From managing the parts of the product to when a specific part will be phased out and a new one will replace it.&lt;&#x2F;p&gt;
+&lt;p&gt;I have worked for e-commerce before, and we also have our own backoffice software for managing our products. Even though it is not the same, I understood the basic need for this system in such a large company.&lt;&#x2F;p&gt;
+&lt;p&gt;They explained to me a little bit about the concept behind the system, and I will go into more detail about the concept in a later blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;Then they showed me the software. It almost had no colors, and from the first glance, it was just some inputs, and then when they clicked, a table appeared. Nothing was responsive, and the table looked like it had a fixed width. Elements were everywhere, and nothing was aligned correctly.&lt;&#x2F;p&gt;
+&lt;p&gt;I didn&#x27;t know what to say. I was promised the best PDM&#x2F;PLM on the market, but it looked like a student put something together real quick.&lt;&#x2F;p&gt;
+&lt;p&gt;Again, I didn&#x27;t realize how wrong I was.&lt;&#x2F;p&gt;
+&lt;p&gt;So the day ended with that mixed feeling of excitement because I could see a challenge in front of me, but also that voice in the back of my head saying, &amp;quot;Maybe this was a mistake?&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I was curious about what would happen the next day when we started to set up my Windows laptop...&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
